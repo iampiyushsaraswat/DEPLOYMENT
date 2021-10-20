@@ -1,0 +1,14 @@
+deployment of a webpage using apache server on VM.
+
+step1. make one ubuntu VM, EC2 instance using AWS.
+step2. access the EC2 instance to host machine/local machine using SSH.
+step3. now install apache packages to ubantu machine.
+	- apt-get update
+	- apt-get install apache
+	- systemctl start httpd (hyper text transfer protocol deman)
+	- firwall-cmd --permanent --add-service=http  (adding apache "http" to firwall)
+	- firewall-cmd --reload
+
+imp* apche config file path- /etc/httpd/conf/httpd.conf
+
+
