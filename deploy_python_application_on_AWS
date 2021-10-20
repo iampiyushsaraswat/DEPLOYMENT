@@ -1,0 +1,17 @@
+To Deploy a Python Application on AWS Cloud we need to follow steps:
+
+step1.) Create EC2 instance on AWS.
+step2.) take access the EC2 instance by using your host machine.
+	-for taking the acccess we need the security key.
+	-we login in EC2 instanse with the help of SSH.
+
+step3.) after getting the access of EC2 instance, pull the python code from git/local_system/etc.
+step4.) now install python,pip,flask in your EC2 instance.
+	- apt-get update
+	- apt-get install python
+	- apt install python3-pip
+	- pip3 onstall flask
+
+step5.) run our python Application.
+	- python filename. (execute python code)
+step6.) use your EC2 instance IP to view your python application on browser.
