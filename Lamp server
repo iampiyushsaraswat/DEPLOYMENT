@@ -1,0 +1,44 @@
+This post will explain how to install LAMP stack on Ubuntu 20.04. LAMP stack consists of the following components:
+
+1. Linux - Any Linux based operating system
+2. Apache server - Apache is an open-source webserver
+3. MySQL - MySQL database
+4. PHP - PHP as a server-side programming language
+
+These components work together to host single or multiple dynamic websites that are stable in production.
+
+#Installing Apache and allowing it through the firewall
+Apache is an amazing open-source web server. Let's install it using the following commands:
+
+$sudo apt update
+$sudo apt install apache2
+
+*Let's allow Apache through the firewall using the following command:
+$sudo ufw allow in "Apache Full"
+*You can always issue the "sudo ufw status" command to verify the changes:
+$sudo ufw status
+
+You can now go to the server URL (IP address) and the apache2 default page will be displayed on the screen.
+
+Installing MySQL on Ubuntu
+MySQL is a very popular and open source database that can be used with almost any application to store huge amounts of data effectively.
+
+Execute the following command to install MySQL on ubuntu:
+
+$sudo apt install mysql-server
+*You should be able to login to MySQL console by typing the following command:
+$sudo mysql
+
+Installing PHP
+We can install PHP by firing the following commands:
+
+$sudo apt install php libapache2-mod-php php-mysql
+This will install the following 3 packages
+a. php -  installs PHP
+b. libapache2-mod-php - Used by apache to handle PHP files
+c. php-mysql - PHP module that allows PHP to connect to MySQL 
+
+Confirm the PHP installation by executing the below command:
+$php -v
+
+***Congratulations! You have successfully installed LAMP stack on your server. If you have any doubts, feel free to drop a comment below and I will get back to you!
